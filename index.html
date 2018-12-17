@@ -17,31 +17,31 @@
                 <p id="description">Let us know how we can improve ReadDict</p>
                 <form action="/submit-form" method="post" id="survey-form">
                     <div class="flex-row">
-                        <label for="name-label" class="flex-row-item flex-row-left">* Name:</label>
+                        <label for="name" class="flex-row-item flex-row-left" id="name-label">* Name:</label>
                         <div class="flex-row-item flex-row-right">
-                            <input type="text" id="name name-label" name="user_name" placeholder="Enter your name"
+                            <input type="text" id="name" name="user_name" placeholder="Enter your name"
                                 required>
                         </div>
                     </div>
                     <div class="flex-row">
-                        <label for="email-label" class="flex-row-item flex-row-left">* Email:</label>
+                        <label for="email" class="flex-row-item flex-row-left" id="email-label">* Email:</label>
                         <div class="flex-row-item flex-row-right">
-                            <input type="email" id="email email-label" name="user_mail" placeholder="Enter your email"
+                            <input type="email" id="email" name="user_mail" placeholder="Enter your email"
                                 required>
                         </div>
                     </div>
                     <div class="flex-row">
-                        <label for="number-label" class="flex-row-item flex-row-left">* Age:</label>
+                        <label for="number" class="flex-row-item flex-row-left" id="number-label">* Age:</label>
                         <div class="flex-row-item flex-row-right">
-                            <input type="number" id="number number-label" name="user_age" placeholder="Age" min="1" max="200"
+                            <input type="number" id="number" name="user_age" placeholder="Age" min="1" max="200"
                                 required>
                         </div>
                     </div>
                     <div class="flex-row">
-                        <label for="role" class="flex-row-item flex-row-left">Which option best describes your current
+                        <label for="dropdown" class="flex-row-item flex-row-left">Which option best describes your current
                             role?</label>
                         <div class="flex-row-item flex-row-right">
-                            <select id="role dropdown" name="user_role">
+                            <select id="dropdown" name="user_role">
                                 <option value="" disabled>Select an option</option>
                                 <option value="Student">Student</option>
                                 <option value="Full Time Job">Full Time Job</option>
@@ -72,7 +72,7 @@
                     <div class="flex-row">
                         <label for="like" class="flex-row-item flex-row-left">What do you like most in ReadDict:</label>
                         <div class="flex-row-item flex-row-right">
-                            <select id="like dropdown" name="user_like">
+                            <select id="like" name="user_like">
                                 <option value="" disabled selected>Select an option</option>
                                 <option value="challenges">Challenges</option>
                                 <option value="projects">Projects</option>
