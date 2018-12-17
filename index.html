@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form FCC02</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="container">
+        <main>
+            <h1 id="title">ReadDict Survey Form</h1>
+            <article>
+                <p id="description">Let us know how we can improve ReadDict</p>
+                <form action="/submit-form" method="post" id="survey-form">
+                    <div class="flex-row">
+                        <label for="name-label" class="flex-row-item flex-row-left">* Name:</label>
+                        <div class="flex-row-item flex-row-right">
+                            <input type="text" id="name name-label" name="user_name" placeholder="Enter your name"
+                                required>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <label for="email-label" class="flex-row-item flex-row-left">* Email:</label>
+                        <div class="flex-row-item flex-row-right">
+                            <input type="email" id="email email-label" name="user_mail" placeholder="Enter your email"
+                                required>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <label for="number-label" class="flex-row-item flex-row-left">* Age:</label>
+                        <div class="flex-row-item flex-row-right">
+                            <input type="number" id="number number-label" name="user_age" placeholder="Age" min="1" max="200"
+                                required>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <label for="role" class="flex-row-item flex-row-left">Which option best describes your current
+                            role?</label>
+                        <div class="flex-row-item flex-row-right">
+                            <select id="role dropdown" name="user_role">
+                                <option value="" disabled>Select an option</option>
+                                <option value="Student">Student</option>
+                                <option value="Full Time Job">Full Time Job</option>
+                                <option value="Full Time Learner">Full Time Learner</option>
+                                <option value="Prefer No To Say">Prefer No To Say</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <label for="recommend" class="flex-row-item flex-row-left self-align-start">* How likely is that you would
+                            recommend freeCodeCamp to a friend?</label>
+                        <div id="recommend" class="flex-row-item flex-row-right">
+                            <div>
+                                <input type="radio" id="definitely" name="user_recommend" value="definitely">
+                                <label for="definitely">Definitely</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="maybe" name="user_recommend" value="maybe">
+                                <label for="maybe">Maybe</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="not_sure" name="user_recommend" value="not_sure">
+                                <label for="not_sure">Not sure</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <label for="like" class="flex-row-item flex-row-left">What do you like most in ReadDict:</label>
+                        <div class="flex-row-item flex-row-right">
+                            <select id="like dropdown" name="user_like">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="challenges">Challenges</option>
+                                <option value="projects">Projects</option>
+                                <option value="community">Community</option>
+                                <option value="open_source">Open source</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <label for="improve" class="flex-row-item flex-row-left self-align-start">Things that should be improved in the
+                            future<br>(Check all that apply):</label>
+                        <div id="improve" class="flex-row-item flex-row-right">
+                            <div>
+                                <input type="checkbox" id="Front-end Projects flex-row-right" name="user_improve" value="front-end_projects">
+                                <label for="Front-end Projects">Front-end Projects</label>
+                            </div>
+                            <div>
+                            	<input type="checkbox" id="Back-end Projects" name="user_improve" value="back-end_projects">
+                            	<label for="Back-end Projects">Back-end Projects</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Data Visualization" name="user_improve" value="data_visualization">
+                                <label for="Data Visualization">Data Visualization</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Challenges" name="user_improve" value="challenges">
+                                <label for="Challenges">Challenges</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Open Source Community" name="user_improve" value="open_source_community">
+                                <label for="Open Source Community">Open Source Community</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Gitter help rooms" name="user_improve" value="gitter_help_rooms">
+                                <label for="Gitter help rooms">Gitter help rooms</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Videos" name="user_improve" value="videos">
+                                <label for="Videos">Videos</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="City Meetups" name="user_improve" value="city_meetups">
+                                <label for="City Meetups">City Meetups</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Wiki" name="user_improve" value="wiki">
+                                <label for="Wiki">Wiki</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Forum" name="user_improve" value="forum">
+                                <label for="WForumiki">Forum</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Additional Courses" name="user_improve" value="additional_courses">
+                                <label for="Additional Courses">Additional Courses</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <label for="comment" class="flex-row-item flex-row-left self-align-start">Any Comments or Suggestions?</label>
+                        <div class="flex-row-item flex-row-right">
+                            <textarea id="comment" name="user_comment" placeholder="Enter your comment here ..." rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                </form>
+            </article>
+            <hr>
+            <footer>Coded by <a href="#">Do Tuan Anh</a></footer>
+        </main>
+    </div>
+</body>
+
+</html>
